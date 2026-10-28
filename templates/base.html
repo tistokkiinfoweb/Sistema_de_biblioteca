@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>{% block title %}The Real You{% endblock title %}</title>
-</head>
-<body>
-    <header><h1></h1></header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{% block title %} {% endblock title %}</title>
+    </head>
+    <body>
 
-    <main>
-        {% block conteudo %}
-        {% endblock conteudo %}
-    </main>
+            {% block content %}
+            {% endblock content %}
 
-    <footer></footer>
-</body>
+    </body>
 </html>
