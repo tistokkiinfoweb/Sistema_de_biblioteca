@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Listar Livros{% endblock title %}
+
+{% block content %}
+    <h1>Listar Livros</h1>
+    <ul>
+        {% for livro in livros %}
+            <li>{{ livro.titulo }} - {{ livro.autor }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <button>Cadastrar Mais Livros</button>
+    <button>Página Inicial da Biblioteca</button>
+{% endblock content %}
