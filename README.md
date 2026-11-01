@@ -22,14 +22,14 @@ O Sistema possui autores e livros.
 <br>
 
 ## Relacionamentos
-1:N - Um autor para vários livros
+1:N - Um autor para vários livros <br>
 N:N - Não fiz ;/
 <br>
 
 ## Instruções para Instalar pendências:
-python -m venv env
-env\Scripts\activate
-pip install flask
+python -m venv env <br>
+env\Scripts\activate <br>
+pip install flask <br>
 pip install SQLAlchemy
 <br>
 
