@@ -47,7 +47,7 @@ capaz de explicar e modificar suas partes principais.
 <br>
 
 **Uso de IA**:
-[ ] Não utilizei IA generativa.
+[X] Não utilizei IA generativa.
 [ ] Utilizei IA generativa e descrevo abaixo onde e como foi utilizada.
 <br>
 
