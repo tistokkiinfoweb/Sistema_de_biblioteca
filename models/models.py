@@ -1,6 +1,7 @@
 from sqlalchemy import ForeignKey, String
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import Mapped, mapped_column
+from typing import List
 
 from database import Base
 
@@ -17,4 +18,12 @@ class Autor(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     nome: Mapped[str] = mapped_column(String(100), nullable=False)
-    livros: Mapped[list["Livro"]] = relationship(back_populates="autor")
+    livros: Mapped[List["Livro"]] = relationship(back_populates="autor")
+
+class Usuario(Base):
+    __tablename__ = "usuarios"
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    nome: Mapped[str] = mapped_column(String(100), nullable=False)
+    email: Mapped[str] = mapped_column(String(100), nullable=False, unique=True)
+    senha: Mapped[str] = mapped_column(String(100))

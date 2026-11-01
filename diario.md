@@ -1,7 +1,7 @@
 28/10: Descobri hoje a existencia desse projeto e estou pirada! Apesar disso, dei início ao projeto com a criação de toda a base e estrutura dos códigos, dando uma atenção a mais ao HTML e CSS (que é o menos complicado), sem o uso de IA. E no exato momento em que escrevo isto, também trabalho no código base do models.py e nas importações, com a ajuda dos códigos já mostrados em sala e dos meus amigos (Raíssa), que me ajudou tirando algumas dúvidas.
 
-29/10: 
+29/10: Trabalhei pela madrugada dps que cheguei do if, fiz algumas correções no app.py e tentei estudar sobre as rotas com Blueprint, mas estava muito cansada. Criei expectativas, pensando que iria entregar pelo menos alguma coisa, agora já não concordo mais com os meus pensamentos passados.
 
-30/10:
+30/10: Trabalhei pouco, sem muita ideia do que fazer. Não sei onde fazer o cód e nem quantas pastas devo criar, então aproveitei para ver alguma coisa sobre a estrutura do banco de dados, e socorro, que négocio difícil! Mas estou pelo menos tentando fazer algo.
 
-31/10:
+31/10: Último dia para fazer o projeto, não dei commit nos últimos dias, pois estou fazendo o trabalho sozinha e somente no meu pc (finalmente tenho um!), e o meu amigo (Lucas Gabriel) vem analisar o meu cód para me ajudar em o que devo melhorar. Mas é isso, não acho que vou fazer uma entrega satisfatória, porém aprendi bastante coisas durante o caminho, e tudo isso sem utilizar IA. Mesmo entrando em desespero, ainda fico feliz de ter conseguido fazer tudo isso, não pensei que seria capaz.

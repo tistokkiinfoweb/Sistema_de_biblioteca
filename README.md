@@ -22,18 +22,23 @@ O Sistema possui autores e livros.
 <br>
 
 ## Relacionamentos
+1:N - Um autor para vários livros
+N:N - Não fiz ;/
 <br>
 
 ## Instruções para Instalar pendências:
-<br>
-
-## Instruções para Criar ou Popular o Banco:
+python -m venv env
+env\Scripts\activate
+pip install flask
+pip install SQLAlchemy
 <br>
 
 ## Instruções para Executar o Sistema:
+flask run --debug
 <br>
 
 ## Principais Dificuldades:
+O projeto
 <br>
 
 ## Declaração de autoria:

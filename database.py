@@ -1,12 +1,12 @@
 from sqlalchemy import create_engine
-from sqlalchemy.orm import DeclarativeBase, session
+from sqlalchemy.orm import DeclarativeBase, Session
 
 engine = create_engine('sqlite:///biblioteca.db')
+
+session = Session(bind=engine)
 
 class Base(DeclarativeBase):
     pass
 
-def criar_banco():
-    Base.metadata.create_all(engine)
-
-session = session(bind=engine)
+def banco_de_dados():
+    Base.metadata.create_all(bind=engine)

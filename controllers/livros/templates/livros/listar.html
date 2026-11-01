@@ -6,10 +6,10 @@
     <h1>Listar Livros</h1>
     <ul>
         {% for livro in livros %}
-            <li>{{ livro.titulo }} - {{ livro.autor }}</li>
+            <li>{{ livro.titulo }} - {{ livro.autor.nome }}</li>
         {% endfor %}
     </ul>
     <br>
-    <button>Cadastrar Mais Livros</button>
-    <button>Página Inicial da Biblioteca</button>
+    <a href="{{url_for('livros.livro')}}">Cadastrar Mais Livros</a>
+    <a href="{{url_for('index')}}">Página Inicial da Biblioteca</a>
 {% endblock content %}

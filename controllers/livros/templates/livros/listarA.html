@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Listar Autores{% endblock title %}
+
+{% block content %}
+    <h1>Listar Autores</h1>
+    <ul>
+        {% for autor in autores %}
+            <li>{{ autor.nome }}
+            {% for livro in autor.livros %}
+                <p>{{livro.titulo}}</p>
+            {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{{url_for('livros.livro')}}">Cadastrar Mais Livros</a>
+    <a href="{{url_for('index')}}">Página Inicial da Biblioteca</a>
+{% endblock content %}

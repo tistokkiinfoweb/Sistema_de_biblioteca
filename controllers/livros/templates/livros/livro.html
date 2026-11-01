@@ -7,15 +7,21 @@
     <p>Preencha os dados do livro que deseja cadastrar</p>
     <br>
     <div>
-        <form action="/cadastrar" method="post">
+        <form action="{{url_for('livros.livro')}}" method="post">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo">
             <br>
             <label for="autor">Autor:</label>
-            <input type="text" id="autor" name="autor">
+            <select name="autor" id="autor">
+                {% for autor in autores %}
+                    <option value={{autor.id}}>{{ autor.nome }}</option>
+                {% endfor %}
+            </select>
             <br>
             <button type="submit">Cadastrar Livro</button>
         </form>
     </div>
-    <button>Acessar Lista do Acervo</button>
+    <a href="{{url_for('livros.autor')}}">Cadastrar mais autores</a>
+    <br>
+    <a href="{{url_for('livros.listar')}}">Acessar Lista do Acervo</a>
 {% endblock %}
